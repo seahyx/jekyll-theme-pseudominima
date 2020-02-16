@@ -194,7 +194,11 @@ pre {
 		padding-left: $spacing-unit / 2;
 	}
 }
+header .wrapper {
+	@include display-flex(row, space-between);
 
+	min-height: inherit;
+}
 
 
 /**
