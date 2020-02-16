@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
 	spec.name          = "jekyll-theme-pseudominima"
-	spec.version       = "0.1.0"
+	spec.version       = "1.2.0"
 	spec.authors       = ["Seah Ying Xiang"]
 	spec.email         = ["seahyx@gmail.com"]
 
