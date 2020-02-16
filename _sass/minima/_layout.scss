@@ -80,14 +80,25 @@
 			}
 		}
 
+		.trigger {
+			display: block;
+			overflow: hidden;
+
+			@include transitions-all(0.45s);
+		}
+
 		input ~ .trigger {
 			clear: both;
-			display: none;
+
+			max-width: 0;
+			max-height: 0;
 		}
 
 		input:checked ~ .trigger {
-			display: block;
 			padding-bottom: 5px;
+
+			max-width: 300px;
+			max-height: 290px;
 		}
 
 		.page-link {
