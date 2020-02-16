@@ -2,12 +2,28 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	{%- seo -%}
+
+	<!-- CSS -->
 	<link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/favicons/apple-touch-icon.png' | relative_url }}">
+	<link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/favicons/favicon-32x32.png' | relative_url }}">
+	<link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/favicons/favicon-16x16.png' | relative_url }}">
+	<link rel="manifest" href="{{ '/assets/favicons/site.webmanifest' | relative_url }}">
+
+	<!-- Jekyll-feed -->
 	{%- feed_meta -%}
+
+	<!-- Google Analytics -->
 	{%- if jekyll.environment == 'production' and site.google_analytics -%}
 		{%- include google-analytics.html -%}
 	{%- endif -%}
+
+	<!-- Theme Loader -->
 	<script src="{{ '/assets/src/theme-loader.js' | relative_url }}"></script>
 	<script src="{{ '/assets/src/theme-switcher.js' | relative_url }}" defer></script>
+
+	<!-- SEO -->
+	{%- seo -%}
 </head>
